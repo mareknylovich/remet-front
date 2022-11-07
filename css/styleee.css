@@ -1,0 +1,661 @@
+/*Стиль фона*/
+*{
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body{
+	overflow: hidden;
+}
+.modal{
+	/*visibility: hidden;*/
+	display: block;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(33, 46, 97, 0.5);
+}
+/*Стиль окна*/
+.modal-content{
+	transition: all 200ms ease-in-out;
+	visibility: visible;
+	background-color: #f3f4f7;
+	margin: auto;
+	padding: 20px;
+	overflow-y: auto;
+	/*border: 3px solid red;*/
+	border-radius: 4px;
+	width: 600px;
+	height: 540px;
+	z-index: 4;
+	position: fixed;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translate(0,0);
+	/*position: fixed;*/
+}
+.blocktext{
+	width: 500px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.blocktext p{
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 500;
+	font-size: 22px;
+	color: #ff5c52;
+	text-align: center;
+}
+/*Класс Лейбла*/
+.inputc{
+	border-radius: 4px;
+	display: block;
+	height: 50px;
+	width: 450px;
+	position: absolute;	
+}
+
+/*По дефолту рамка инпута*/
+.clinp{
+	border: 1px solid #c5ced8;
+	/*outline: black solid 2px;*/
+}
+
+/*Классы свг*/
+.svg1{
+	position: absolute;
+	display: inline-block;
+	width: 120px;
+	left:16%;
+	top:92%;
+	transform:translate(-16%,-92%);
+}
+.svg2{
+	position: absolute;
+	display: inline-block;
+	width: 60px;
+	left:39%;
+	top:91%;
+	transform:translate(-39%,-91%);
+}
+.svg3{
+	position: absolute;
+	display: inline-block;
+	width: 80px;
+	left:59%;
+	top:91%;
+	transform:translate(-59%,-91%);
+}
+.svg4{
+	position: absolute;
+	display: inline-block;
+	width: 80px;
+	left:82%;
+	top:91%;
+	transform:translate(-82%,-91%);
+}
+
+/*Подпись снизу*/
+#the1{
+	display: inline-block;
+	position: absolute;
+	top: 38%;
+	left: 20%;
+	transform: translate(-20%, -38%);
+	color: #ff5c52;
+	font-size: 13px;
+}
+#the2{
+	display: inline-block;
+	position: absolute;
+	top: 53%;
+	left: 22.5%;
+	transform: translate(-22.5%, -53%);
+	color: #ff5c52;
+	font-size: 13px;
+}
+#the3{
+	display: inline-block;
+	position: absolute;
+	top: 68%;
+	left: 18%;
+	transform: translate(-18%, -68%);
+	color: #ff5c52;
+	font-size: 13px;
+}
+#the4{
+	display: inline-block;
+	position: absolute;
+	top: 68%;
+	left: 74%;
+	transform: translate(-46%, -68%);
+	color: #ff5c52;
+	font-size: 13px;
+}
+/*ID Лейбла*/
+#num{
+	top: 30%;
+	transform: translate(-50%, -30%);
+	left: 50%;
+}
+#numm{
+	top: 46%;
+	transform: translate(-50%, -46%);
+	left: 50%;
+}
+#nummm{
+	top: 62%;
+	transform: translate(-14%, -62%);
+	left: 14%;
+	display: inline-block;
+	width: 65px;
+}
+#nummmmm{
+	top:62%;
+	transform: translate(-30%, -62%);
+	left: 30%;
+	display: inline-block;
+	width: 65px;
+}
+#nummmm{
+	top:62%;
+	transform: translate(-85.5%, -62%);
+	left: 85.5%;
+	display: inline-block;
+	width: 80px;
+}
+.slesh{
+	font-size: 36px;
+	font-weight: 400;
+	color: #506071;
+	display: inline-block;
+	position: absolute;
+	top:61.5%;
+	transform: translate(-24.5%, -62%);
+	left: 24.5%;
+}
+
+/*ID span*/
+#num1{
+	left: 17px;
+	display: block;
+	position: absolute;
+	top: 23%;
+	/*transform: translate(28px, -21%);*/
+	font-size: 21px;
+	transition: 0.15s ease-out 0s;
+	z-index: 1;
+	color: #506071;
+}
+#num2{
+	left: 17px;
+	display: block;
+	position: absolute;
+	top: 23%;
+	/*transform: translate(28px, -21%);*/
+	font-size: 21px;
+	transition: 0.15s ease-in 0s;
+	z-index: 1;
+	color: #506071;
+}
+#num3{
+	left: 15px;
+	display: block;
+	position: absolute;
+	top: 23%;
+	/*transform: translate(28px, -21%);*/
+	font-size: 21px;
+	transition: 0.15s ease-in 0s;
+	z-index: 1;
+	color: #506071;
+}
+#num4{
+	left: 17px;
+	display: block;
+	position: absolute;
+	top: 23%;
+	/*transform: translate(28px, -21%);*/
+	font-size: 21px;
+	transition: 0.15s ease-in 0s;
+	z-index: 1;
+	color: #506071;
+}
+#num5{
+	left: 17px;
+	display: block;
+	position: absolute;
+	top: 23%;
+	/*transform: translate(28px, -21%);*/
+	font-size: 21px;
+	transition: 0.15s ease-in 0s;
+	z-index: 1;
+	color: #506071;
+}
+
+
+
+/*Эффект при нажатии*/
+#num_num:focus ~#num1,#num_num:valid ~#num1{
+	font-size: 16px;
+    top: 14%;
+	transform: translate(-11%, -14%);
+	left: 28px;
+}
+#f:focus ~#num2,#f:valid ~#num2{
+	font-size: 16px;
+    top: 14%;
+	transform: translate(-11%, -14%);
+	left: 26px;
+}
+#mm:focus ~#num3,#mm:valid ~#num3{
+	font-size: 16px;
+    top: 14%;
+	transform: translate(-11%, -14%);
+	left: 22px;
+}
+#cvv:focus ~#num4,#cvv:valid ~#num4{
+	font-size: 16px;
+    top: 14%;
+	transform: translate(-11%, -14%);
+	left: 22px;
+}
+#yy:focus ~#num5,#yy:valid ~#num5{
+	font-size: 16px;
+    top: 14%;
+	transform: translate(-11%, -14%);
+	left: 22px;
+}
+
+
+/*Убирает стрелочки*/
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*ID input*/
+#num_num{
+	position: absolute;
+	height: 50px;
+	width: 450px;
+	font-size: 17px;
+	padding-left: 17px;
+	padding-top: 17px;
+	border-radius: 4px;
+}
+#f{
+	position: absolute;
+	height: 50px;
+	width: 450px;
+	font-size: 17px;
+	padding-left: 17px;
+	padding-top: 17px;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+#mm{
+	position: absolute;
+	height: 50px;
+	width: 65px;
+	font-size: 17px;
+	padding-left: 17px;
+	padding-top: 17px;
+	border-radius: 4px;
+
+}
+#yy{
+	position: absolute;
+	height: 50px;
+	width: 65px;
+	font-size: 17px;
+	padding-left: 17px;
+	padding-top: 17px;
+	border-radius: 4px;
+
+}
+#cvv{
+	position: absolute;
+	height: 50px;
+	width: 80px;
+	font-size: 17px;
+	padding-left: 17px;
+	padding-top: 17px;
+	border-radius: 4px;
+}
+
+
+
+
+/*кнопка*/
+#button{
+	border: none;
+	background-color: #13aae5;
+	cursor: pointer;
+	color: white;
+	text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -90%);
+	position: absolute;
+}
+@media screen and (min-width: 470px) and (max-width: 601px){
+	.modal-content{
+	transition: all  200ms ease-in-out;
+	visibility: visible;
+	background-color: #f3f4f7;
+	margin: auto;
+	padding: 20px;
+	overflow-y: auto;
+	/*border: 3px solid red;*/
+	border-radius: 4px;
+	width: 470px;
+	height: 540px;
+	z-index: 4;
+	position: fixed;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translate(0,0);
+	/*position: fixed;*/
+	}
+	.blocktext{
+	width: 460px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.blocktext p{
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 500;
+	font-size: 22px;
+	color: #ff5c52;
+	text-align: center;
+}
+.blocktext p span{
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 400;
+	font-size: 19px;
+	color: #506071;
+	text-align: center;
+}
+	.inputc{
+	border-radius: 4px;
+	display: block;
+	height: 50px;
+	width: 370px;
+	position: absolute;	
+	}
+	#num_num{
+	position: absolute;
+	height: 50px;
+	width: 370px;
+	font-size: 17px;
+	padding-left: 17px;
+	padding-top: 17px;
+	border-radius: 4px;
+}
+#f{
+	position: absolute;
+	height: 50px;
+	width: 370px;
+	font-size: 17px;
+	padding-left: 17px;
+	padding-top: 17px;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+#nummm{
+	top: 62%;
+	transform: translate(-12.5%, -62%);
+	left: 12.5%;
+	display: inline-block;
+	width: 65px;
+}
+#nummmmm{
+	top:62%;
+	transform: translate(-36%, -62%);
+	left: 36%;
+	display: inline-block;
+	width: 65px;
+}
+#nummmm{
+	top:62%;
+	transform: translate(-87%, -62%);
+	left: 87%;
+	display: inline-block;
+	width: 80px;
+}
+
+.slesh{
+	font-size: 36px;
+	font-weight:400;
+	color: #506071;
+	display: inline-block;
+	position: absolute;
+	top:61.5%;
+	transform: translate(-27%, -62%);
+	left: 27%;
+}
+.svg1{
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	left:16%;
+	top:92%;
+	transform:translate(-16%,-92%);
+}
+.svg2{
+	position: absolute;
+	display: inline-block;
+	width: 50px;
+	left:39%;
+	top:91%;
+	transform:translate(-39%,-91%);
+}
+.svg3{
+	position: absolute;
+	display: inline-block;
+	width: 70px;
+	left:59%;
+	top:91%;
+	transform:translate(-59%,-91%);
+}
+.svg4{
+	position: absolute;
+	display: inline-block;
+	width: 70px;
+	left:82%;
+	top:91%;
+	transform:translate(-82%,-91%);
+}
+#the4{
+	display: inline-block;
+	position: absolute;
+	top: 68%;
+	left: 65%;
+	transform: translate(-24%, -68%);
+	color: #ff5c52;
+	font-size: 13px;
+}
+#the3{
+	display: inline-block;
+	position: absolute;
+	top: 68%;
+	left: 16%;
+	transform: translate(-16%, -68%);
+	color: #ff5c52;
+	font-size: 13px;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 469px){
+	.modal-content{
+	transition: all  200ms ease-in-out;
+	visibility: visible;
+	background-color: #f3f4f7;
+	margin: auto;
+	padding: 20px;
+	overflow-y: auto;
+	/*border: 3px solid red;*/
+	border-radius: 4px;
+	width: 340px;
+	height: 540px;
+	z-index: 4;
+	position: fixed;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translate(0,0);
+	/*position: fixed;*/
+	}
+		.blocktext{
+	width: 460px;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.blocktext p{
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 1.28;
+	color: #ff5c52;
+	text-align: center;
+}
+.blocktext p span{
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 400;
+	font-size: 19px;
+	color: #506071;
+	text-align: center;
+}
+		.inputc{
+	border-radius: 4px;
+	display: block;
+	height: 50px;
+	width: 300px;
+	position: absolute;	
+	}
+	#num_num{
+	position: absolute;
+	height: 50px;
+	width: 300px;
+	font-size: 17px;
+	padding-left: 17px;
+	padding-top: 17px;
+	border-radius: 4px;
+}
+#f{
+	position: absolute;
+	height: 50px;
+	width: 300px;
+	font-size: 17px;
+	padding-left: 17px;
+	padding-top: 17px;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+#nummm{
+	top: 62%;
+	transform: translate(-7.5%, -62%);
+	left: 7.5%;
+	display: inline-block;
+	width: 65px;
+}
+#nummmmm{
+	top:62%;
+	transform: translate(-44%, -62%);
+	left: 44%;
+	display: inline-block;
+	width: 65px;
+}
+#nummmm{
+	top:62%;
+	transform: translate(-92%, -62%);
+	left: 92%;
+	display: inline-block;
+	width: 80px;
+}
+
+.slesh{
+	font-size: 36px;
+	font-weight: 400;
+	color: #506071;
+	display: inline-block;
+	position: absolute;
+	top:61.5%;
+	transform: translate(-30%, -62%);
+	left: 30%;
+}
+.svg1{
+	position: absolute;
+	display: inline-block;
+	width: 80px;
+	left:16%;
+	top:92%;
+	transform:translate(-16%,-92%);
+}
+.svg2{
+	position: absolute;
+	display: inline-block;
+	width: 40px;
+	left:40%;
+	top:91%;
+	transform:translate(-40%,-91%);
+}
+.svg3{
+	position: absolute;
+	display: inline-block;
+	width: 50px;
+	left:59%;
+	top:91%;
+	transform:translate(-59%,-91%);
+}
+.svg4{
+	position: absolute;
+	display: inline-block;
+	width: 50px;
+	left:82%;
+	top:91%;
+	transform:translate(-82%,-91%);
+}
+#the4{
+	display: none;
+	position: absolute;
+	top: 68%;
+	left: 65%;
+	transform: translate(-24%, -68%);
+	color: #ff5c52;
+	font-size: 13px;
+}
+#the3{
+	display: inline-block;
+	position: absolute;
+	top: 68%;
+	left: 12%;
+	transform: translate(-12%, -68%);
+	color: #ff5c52;
+	font-size: 13px;
+}
+#the1{
+	display: inline-block;
+	position: absolute;
+	top: 38%;
+	left: 16%;
+	transform: translate(-16%, -38%);
+	color: #ff5c52;
+	font-size: 13px;
+}
+}
